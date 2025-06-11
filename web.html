@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce Website</title>
+    <link rel="stylesheet" href="Web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img class="img_logo" src="images/logo.jpeg" alt="">
+                <h1>BazarBliss</h1>
+            </div>
+            <ul>
+                <li>
+                    <a id="home" onclick="homes()">Home</a>
+                    <a id="shop" onclick="shops()">Shops</a>
+                    <a id="blog" onclick="blogs()">Blog</a>
+                    <a id="about" onclick="abouts()">About</a>
+                    <a id="contact" onclick="contacts()">Contact</a>
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+
+                </li>
+            </ul>
+        </nav>
+
+        <!-- mainpage -->
+
+        <div class="main">
+            <div class="mainText">
+                <h2>BazarBliss</h2>
+                <h1 class="top">Unbeatable Prices</h1>
+                <h1>Across All Categories</h1>
+                <p>Discover a wide range of products at amazing discounts. Shop now and save big on your favorite items!
+                </p>
+                <button>Shop Now</button>
+            </div>
+            <img src="images/m3.png" alt="">
+        </div>
+
+        <!-- cards -->
+
+        <div class="trend">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="images/srt1.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cotton Trending Shirt's</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="images/srt2.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cotton Trending Shirt's</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button class="addToCart" onclick="addCart()">Add to Cart </button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="images/srt6.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Cotton Trending Shirt's</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button class="addToCart" onclick="addCart()">Add to Cart </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Women Card -->
+
+        <div class="trend" id="trendSec">
+            <div class="head">
+                <h1>Trends <span>Women's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="crd">
+                    <img src="images/wn4.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Hot Picks <span>Girl's Tops</span></h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button class="addToCart" onclick="addCart()">Add to Cart </button>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="images/wn5.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Hot Picks <span>Girl's Tops</span></h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button class="addToCart" onclick="addCart()">Add to Cart </button>
+                    </div>
+                </div>
+
+                <div class="crd">
+                    <img src="images/wn6.webp" alt="" onclick="show(this)">
+                    <div class="crdText">
+                        <h2>Hot Picks <span>Girl's Tops</span></h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> <br>
+                        <button class="addToCart" onclick="addCart()">Add to Cart </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about us -->
+
+        <div class="about">
+            <div class="aboutus">
+                <h1>#KnowUs</h1>
+                <p>Welcome to BazarBliss, your ultimate destination for the latest fashion trends and exclusive offers.
+                </p>
+            </div>
+
+            <div class="me">
+                <img src="images/lap.png" alt="About Us">
+                <div class="aboutText">
+                    <h1>Who We Are ?</h1><br><br>
+                    <p>At BazarBliss, we believe in providing our customers with the best shopping experience. Our
+                        dedicated team works tirelessly to bring you the latest trends, high-quality products, and
+                        exceptional service. From chic clothing to trendy accessories, we curate collections that cater
+                        to your unique style and preferences.</p><br><br>
+                    <p>Our mission is to make fashion accessible to everyone, offering a diverse range of products at
+                        competitive prices. We are passionate about fashion and committed to ensuring you look and feel
+                        your best. Join our community and discover a world of style and elegance.</p>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+
+        <div class="contact">
+
+            <div class="contactus">
+                <h1>#Let's Connect</h1>
+                <p>We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel
+                    free to reach out to us.</p>
+            </div>
+
+            <div class="contactMe">
+                <div class="contactText">
+                    <h1>Visit Our Office or Contact <br>
+                        Us Today</h1>
+                    <p>Address : Dablin Park, England, New york.</p>
+                    <p>Contact : dumiemail@gmail.com</p>
+                    <p>Number : 999999000011</p>
+                </div>
+                <img src="images/map.PNG" alt="">
+            </div>
+
+            <div class="form">
+                <h1>Contact Us</h1>
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required> <br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required> <br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required> <br>
+
+                    <label for="order-number">Order Number (if applicable):</label>
+                    <input type="text" id="order-number" name="order-number" placeholder="Enter Your Order Number"> <br>
+
+                    <label for="inquiry-type">Inquiry Type:</label>
+                    <select id="inquiry-type" name="inquiry-type" required>
+                        <option value="">Select Inquiry Type</option>
+                        <option value="order-status">Order Status</option>
+                        <option value="product-info">Product Information</option>
+                        <option value="returns">Returns and Refunds</option>
+                        <option value="support">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select> <br>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Describe your issue or inquiry"
+                        required></textarea> <br>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+        <!-- cart -->
+
+        <div class="cart">
+            <img id="images/newImg" src="" alt="">
+            <div class="cartText">
+                <h1>Trends Offer : Trending Shop <br>
+                    Now</h1>
+                <h2>Special Price</h2>
+                <h2>₹ 1500</h2>
+                <p>Discover the latest in fashion with our exclusive offer. Perfect for updating your wardrobe with
+                    trendy pieces at an unbeatable price.</p>
+                <p>Limited time only! Don’t miss out on this special deal and elevate your style with our top picks.</p>
+                <p>Available in various sizes and colors. Shop now and enjoy a fresh new look!</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addCart()">Add to Cart</button>
+                </div>
+                <button class="back">Back</button>
+            </div>
+        </div>
+
+        <!-- blogs -->
+        <div class="trends">
+            <div class="head">
+                <h1>Trends <span>Men's Wear</span></h1>
+            </div>
+            <div class="card">
+                <div class="blog">
+                    <img src="images/tr1.webp" alt="">
+                    <div class="blogText">
+                        <h2>Trending women's wear</h2>
+                        <p>Explore the latest styles and must-have pieces for women. From chic dresses to trendy tops,
+                            find your new favorite outfits.</p>
+                        <a href="https://www.houseofindya.com/fashion-trends/cat">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog">
+                    <img src="images/tr3.webp" alt="">
+                    <div class="blogText">
+                        <h2>Trending Men's wear</h2>
+                        <p>Discover the hottest trends and stylish choices for men. Whether it's casual wear or smart
+                            outfits, stay ahead in fashion.</p>
+                        <a href="https://in.pinterest.com/ashtondeva/mens-trending-fashion/">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter -->
+
+        <div class="letter">
+            <div class="letterText">
+                <h1>Sign Up for NewsLetter</h1>
+                <p>Be the first to know about our latest updates, special promotions, and exclusive content. Subscribe
+                    now to stay in the loop!</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footerText">
+                <h2>Trends</h2>
+                <p>Service </p>
+                <p>Customer</p>
+                <p>Satisfaction</p>
+                <p></p>
+
+            </div>
+            <div class="footerText">
+                <h2>About US</h2>
+                <p>Adrress : Subhash Nagar, <br>
+                    Ghugus <br>
+                    Dist. Chandrapur, Maharashtra</p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="footerText">
+                <h2>Contact</h2>
+                <p>7972609247</p>
+                <p>Customer</p>
+                <p>Comming up</p>
+                <p>New Arrival</p>
+
+            </div>
+            <div class="footerText">
+                <h2>Trending</h2>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Shops</p>
+                <p></p>
+
+            </div>
+        </div>
+    </div>
+    <script src="Web.js"></script>
+</body>
+
+</html>
